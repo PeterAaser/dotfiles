@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/etc/rc0.d'
+let g:netrw_dirhist_2='/etc'
+let g:netrw_dirhist_3='/home/peter/Desktop'
+let g:netrw_dirhist_4='/home/peter'
+let g:netrw_dirhist_5='/home/peter/.Genymobile'
+let g:netrw_dirhist_6='/home/peter/documents'
+let g:netrw_dirhist_7='/home/peter/.oracle_jre_usage'
+let g:netrw_dirhist_8='/home/peter/.screenlayout'

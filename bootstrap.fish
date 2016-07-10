@@ -3,7 +3,7 @@
 
 set dir ~/dotfiles
 set olddir ~/dotfiles
-set files ".bashrc" ".vimrc" ".vim" ".emacs" ".emacs.d" ".tmux.conf" ".i3"
+set files ".bashrc" ".vimrc" ".vim" ".emacs.d" ".tmux.conf" ".i3"
 
 ##########
 

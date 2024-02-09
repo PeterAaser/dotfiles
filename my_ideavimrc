@@ -1,0 +1,18 @@
+
+noremap a h
+noremap e j
+noremap o k
+noremap h l
+noremap k o
+noremap K O
+
+noremap <C-e> :tabprev<cr>
+noremap <C-o> :tabnext<cr>
+noremap <C-a> <C-w>h
+noremap <C-h> <C-w>l
+
+""" Plugins  --------------------------------
+Plug 'easymotion/vim-easymotion'
+Plug 'https://github.com/kana/vim-arpeggio'
+
+call arpeggio#map('i', '', 0, 'vk', '<Esc>')

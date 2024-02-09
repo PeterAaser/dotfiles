@@ -1,0 +1,424 @@
+{
+	"keyboard.dispatch": "keyCode",
+	"files.autoSave": "onFocusChange",
+	"workbench.colorTheme": "Gruvbox Dark Soft",
+	"cmake.configureOnOpen": true,
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"v",
+				"k"
+			],
+			"after": [
+				"<Esc>"
+			]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"u"
+			],
+			"commands": [
+				"undo"
+			]
+		},
+		{
+			"before": [
+				"c-r"
+			],
+			"commands": [
+				"redo"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"a"
+			],
+			"commands": [
+				":tabprev"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"h"
+			],
+			"commands": [
+				":tabnext"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d"
+			],
+			"after": [
+				"d",
+				"d"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"c"
+			],
+			"commands": [
+				":nohl"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"q"
+			],
+			"commands": [
+				":q"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"g"
+			],
+			"commands": [
+				"macros.gotoDefOther"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"<Tab>"
+			],
+			"commands": [
+				"workbench.action.navigateBack"
+			]
+		},
+		{
+			"before": [
+				"a"
+			],
+			"after": [
+				"h"
+			]
+		},
+		{
+			"before": [
+				"e"
+			],
+			"after": [
+				"j"
+			]
+		},
+		{
+			"before": [
+				"o"
+			],
+			"after": [
+				"k"
+			]
+		},
+		{
+			"before": [
+				"h"
+			],
+			"after": [
+				"l"
+			]
+		},
+		{
+			"before": [
+				"k"
+			],
+			"after": [
+				"o"
+			]
+		},
+		{
+			"before": [
+				"<C-a>"
+			],
+			"after": [
+				"<C-w>",
+				"h"
+			]
+		},
+		{
+			"before": [
+				"<C-e>"
+			],
+			"commands": [
+				":tabprev"
+			]
+		},
+		{
+			"before": [
+				"<C-o>"
+			],
+			"commands": [
+				":tabnext"
+			]
+		},
+		{
+			"before": [
+				"<C-h>"
+			],
+			"after": [
+				"<C-w>",
+				"l"
+			]
+		},
+		{
+			"before": [
+				"<C-u>"
+			],
+			"commands": [
+				":q"
+			]
+		},
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"q"
+			],
+			"commands": [
+				":q"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"a"
+			],
+			"commands": [
+				":tabprev"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"n"
+			],
+			"commands": [
+				":tabnext"
+			]
+		},
+		{
+			"before": [
+				"<C-n>"
+			],
+			"commands": [
+				":nohl"
+			]
+		},
+		{
+			"before": [
+				"a"
+			],
+			"after": [
+				"h"
+			]
+		},
+		{
+			"before": [
+				"e"
+			],
+			"after": [
+				"j"
+			]
+		},
+		{
+			"before": [
+				"o"
+			],
+			"after": [
+				"k"
+			]
+		},
+		{
+			"before": [
+				"h"
+			],
+			"after": [
+				"l"
+			]
+		},
+	],
+	"vim.leader": "<space>",
+	"vim.handleKeys": {
+		"<C-g>": false
+	},
+	"editor.AfontSize": 18,
+	"files.watcherExclude": {
+		"**/.bloop": true,
+		"**/.metals": true,
+		"**/.ammonite": true
+	},
+	"lldb.launch.expressions": "native",
+	"lldb.launch.sourceLanguages": [
+		"cpp",
+		"rust"
+	],
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#003d39",
+		"editor.selectionBackground": "#135564",
+		"editor.selectionHighlightBackground": "#135564",
+	},
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"terminal.integrated.scrollback": 1000000,
+	"search.useIgnoreFiles": false,
+	"debug.onTaskErrors": "abort",
+	"debug.console.fontSize": 18,
+	"terminal.integrated.fontSize": 20,
+	"extensions.ignoreRecommendations": true,
+	"editor.selectionClipboard": false,
+	"clangd.onConfigChanged": "restart",
+	"lldb.dereferencePointers": false,
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"pomodoro.workTime": 52,
+	"pomodoro.pauseTime": 17,
+	"python.languageServer": "Pylance",
+	"python.analysis.useLibraryCodeForTypes": false,
+	"cSpell.userWords": [
+		"Acxp",
+		"aptos",
+		"ascenium",
+		"assert",
+		"Bjarne",
+		"BRANCHUC",
+		"BSUBC",
+		"coremark",
+		"crcu",
+		"datefile",
+		"dbgsi",
+		"dbgsw",
+		"Deqs",
+		"foldl",
+		"Hurr",
+		"Indentee",
+		"liveins",
+		"LLVM",
+		"MBBs",
+		"mkdir",
+		"MULHS",
+		"MULHU",
+		"mzero",
+		"SETCC",
+		"Shamt",
+		"TBAA",
+		"Ucxp",
+		"UMIV",
+		"unmark"
+	],
+	"workbench.startupEditor": "newUntitledFile",
+	"debug.focusWindowOnBreak": false,
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace",
+		"gitlens.codeLens.scopes": [
+			"document"
+		]
+	},
+	"liveshare.authenticationProvider": "GitHub",
+	"python.showStartPage": false,
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.renderCharacters": false,
+	"C_Cpp.intelliSenseMemoryLimit": 16384,
+	"editor.tabCompletion": "on",
+	"liveshare.allowGuestDebugControl": true,
+	"liveshare.allowGuestTaskControl": true,
+	"editor.fontSize": 24,
+	"rss.accounts": {
+		"85c37db0-c837-11eb-b9c5-498ec0eebb2a": {
+			"name": "Default",
+			"type": "local",
+			"feeds": [
+				"http://n-gate.com/hackernews/index.rss",
+				"http://feeds.propublica.org/propublica/main"
+			]
+		},
+		"8d6ab830-c837-11eb-b9c5-498ec0eebb2a": {
+			"name": "Peter",
+			"type": "local",
+			"feeds": []
+		}
+	},
+	"editor.tabSize": 8,
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"editor.formatOnSave": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"debug.terminal.clearBeforeReusing": true,
+	"workbench.editor.wrapTabs": true,
+	"lldb.launch.terminal": "external",
+	"terminal.external.linuxExec": "gnome-terminal",
+	"indentRainbow.ignoreErrorLanguages": [
+		"cpp",
+		"c++",
+		"markdown"
+	],
+	"indentRainbow.colors": [
+		"rgba(255,255,255,0.17)",
+		"rgba(184,184,184,0.07)"
+	],
+	"indentRainbow.colorOnWhiteSpaceOnly": true,
+	"indentRainbow.ignoreLinePatterns": [
+		"/[ \t]* [*]/g",
+		"/[ \t]+[/]{2}/g"
+	],
+	"redhat.telemetry.enabled": false,
+	"bracketPairColorizer.highlightActiveScope": true,
+	"bracketPairColorizer.showBracketsInGutter": true,
+	"bracketPairColorizer.showBracketsInRuler": true,
+	"sync.gist": "12453d0eb16734b1d3de1ab0f88aa49b",
+	"lldb.commandCompletions": false,
+	"macros": {
+		"gotoDefOther": [
+			"editor.action.revealDefinition",
+			"workbench.action.moveEditorToRightGroup"
+		]
+	},
+	"clangd.path": "/home/peter/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+	"restructuredtext.preview.fontSize": 20,
+	"markdown.preview.fontSize": 20,
+	"clangd.detectExtensionConflicts": false,
+	"workbench.editor.languageDetection": false,
+	"vim.vimrc.enable": true,
+	"audioCues.onDebugBreak": "on",
+	"editor.largeFileOptimizations": false,
+	"files.exclude": {
+		"**/.dwo": true,
+		"**/.o": true
+	},
+	"diffEditor.maxComputationTime": 0,
+	"cSpell.enabled": false,
+	"editor.inlayHints.enabled": "off",
+	"haskell.manageHLS": "GHCup",
+	"haskell.ghcupExecutablePath": "/home/peter/.ghcup/bin/ghcup",
+	"haskell.toolchain": {
+		"haskell.toolchain": {
+			"ghc": "9.2.5",
+			"hls": "latest",
+			"cabal": null,
+			"stack": "2.9.1"
+		}
+	},
+	"workbench.editor.empty.hint": "hidden",
+	"lldb.showDisassembly": "never",
+	"cmake.showOptionsMovedNotification": false
+}

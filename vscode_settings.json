@@ -1,7 +1,7 @@
 {
 	"keyboard.dispatch": "keyCode",
 	"files.autoSave": "onFocusChange",
-	"workbench.colorTheme": "Gruvbox Dark Soft",
+	"workbench.colorTheme": "Gruvbox Dark Medium",
 	"cmake.configureOnOpen": true,
 	"vim.easymotion": true,
 	"vim.incsearch": true,
@@ -285,6 +285,11 @@
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter.notebook.ipynb"
 	},
+	"clangd.arguments": [
+		"--header-insertion=never",
+		"--compile-commands-dir=${workspaceFolder}/",
+		"--query-driver=**"
+	],
 	"pomodoro.workTime": 52,
 	"pomodoro.pauseTime": 17,
 	"python.languageServer": "Pylance",
@@ -361,7 +366,6 @@
 	"editor.lineNumbers": "on",
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
 	"editor.wordWrap": "off",
-	"editor.formatOnSave": true,
 	"security.workspace.trust.untrustedFiles": "open",
 	"debug.terminal.clearBeforeReusing": true,
 	"workbench.editor.wrapTabs": true,
@@ -393,13 +397,12 @@
 			"workbench.action.moveEditorToRightGroup"
 		]
 	},
-	"clangd.path": "/home/peter/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+	"clangd.path": "/home/peter/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
 	"restructuredtext.preview.fontSize": 20,
 	"markdown.preview.fontSize": 20,
 	"clangd.detectExtensionConflicts": false,
 	"workbench.editor.languageDetection": false,
 	"vim.vimrc.enable": true,
-	"audioCues.onDebugBreak": "on",
 	"editor.largeFileOptimizations": false,
 	"files.exclude": {
 		"**/.dwo": true,
@@ -420,5 +423,24 @@
 	},
 	"workbench.editor.empty.hint": "hidden",
 	"lldb.showDisassembly": "never",
-	"cmake.showOptionsMovedNotification": false
+	"cmake.showOptionsMovedNotification": false,
+	"accessibility.signals.onDebugBreak": {
+		"sound": "on"
+	},
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"hexinspector.hoverContent": [
+		"decimal",
+		"hexadecimal",
+		"binary",
+		"float32",
+		"ascii",
+		"size"
+	],
+	"editor.multiCursorLimit": 100000,
+	"cmake.showConfigureWithDebuggerNotification": false,
+	"bazel.lsp.command": "bazel-lsp",
+	"chat.editor.fontSize": 22
 }

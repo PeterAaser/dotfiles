@@ -1,2 +1,7 @@
 [scrolling]
 history = 100000
+
+[mouse]
+bindings = [
+    { mouse = "Middle", action = "PasteSelection" },
+]

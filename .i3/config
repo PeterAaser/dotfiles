@@ -29,8 +29,10 @@ font pango:monospace 12
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# start a terminal — alacritty directly, not via i3-sensible-terminal, because
+# Ubuntu 26.04's `x-terminal-emulator` alternative is ptyxis (GTK4/Wayland-first)
+# which doesn't behave right under i3's X11 session.
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -155,7 +157,14 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id volumeicon
+# Compositor. --backend glx is required: Ubuntu 26.04's picom refuses to
+# start without an explicit backend, and glx is the right pick for the
+# NVIDIA proprietary driver. -b daemonizes.
+# Helper scripts in .i3/scripts/ (setup-displays.sh, nvidia-ffcp.sh) exist
+# for if/when multi-monitor tearing or per-output FFCP becomes needed.
+exec --no-startup-id picom --backend glx -b
+
+exec --no-startup-id pasystray
 
 # le haskel
 # set $x_switch exec --no-startup-id ~/.i3/i3-wk-switch/i3-wk-switch.py

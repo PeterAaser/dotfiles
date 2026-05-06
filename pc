@@ -44,7 +44,14 @@ xkb_symbols "pc105" {
     modifier_map Mod5   { <LVL3>, <MDSW> };
 
     key <ALT>  {	[ NoSymbol, Alt_L	]	};
-    include "altwin(meta_alt)"
+    // Inlined replacement for `include "altwin(meta_alt)"`. The stock
+    // altwin(meta_alt) maps Mod1 by keycode for both <LALT> AND <RALT>,
+    // which fights `level3(ralt_switch)` in the us layout — RAlt ends up
+    // in both Mod1 and Mod5, so readline (and many apps) see AltGr+letter
+    // as Meta/Alt+letter. Keeping LAlt's Alt_L/Meta_L mapping intact, but
+    // dropping <RALT> from Mod1 entirely.
+    key <LALT> { [ Alt_L, Meta_L ] };
+    modifier_map Mod1 { <LALT> };
 
     key <META> {	[ NoSymbol, Meta_L	]	};
     modifier_map Mod1   { <META> };

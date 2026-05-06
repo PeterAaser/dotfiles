@@ -1,0 +1,13 @@
+# peter config begin:
+
+# generic
+alias brc="source ~/.bashrc"
+alias lsr="ls -ltrh"
+alias claude="claude --dangerously-skip-permissions"
+
+# work-ish
+alias bb="bazelisk"
+alias bgrep="b query ... | grep "
+alias asc="cd ~/ascenium"
+alias grbo="git rebase origin/master"
+export VCD_SIM_I3=state:7,detail:1,surfer:4,cache:1

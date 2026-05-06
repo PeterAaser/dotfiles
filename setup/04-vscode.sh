@@ -18,8 +18,19 @@ if [[ ! -f "$SRC" ]]; then
 fi
 
 if ! command -v code >/dev/null; then
-    echo "!! VSCode (`code`) not in PATH; install it first (Microsoft apt repo)." >&2
-    exit 1
+    echo "==> VSCode not installed; setting up Microsoft apt repo"
+    KEYRING=/usr/share/keyrings/packages.microsoft.gpg
+    if [[ ! -f "$KEYRING" ]]; then
+        curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o "$KEYRING"
+        sudo chmod go+r "$KEYRING"
+    fi
+    LIST=/etc/apt/sources.list.d/vscode.list
+    if [[ ! -f "$LIST" ]]; then
+        echo "deb [arch=amd64,arm64,armhf signed-by=$KEYRING] https://packages.microsoft.com/repos/code stable main" \
+            | sudo tee "$LIST" >/dev/null
+    fi
+    sudo apt-get update
+    sudo apt-get install -y code
 fi
 
 mkdir -p "$DEST_DIR"

@@ -157,13 +157,6 @@ bar {
         status_command i3status
 }
 
-# Compositor. --backend glx is required: Ubuntu 26.04's picom refuses to
-# start without an explicit backend, and glx is the right pick for the
-# NVIDIA proprietary driver. -b daemonizes.
-# Helper scripts in .i3/scripts/ (setup-displays.sh, nvidia-ffcp.sh) exist
-# for if/when multi-monitor tearing or per-output FFCP becomes needed.
-exec --no-startup-id picom --backend glx -b
-
 exec --no-startup-id pasystray
 
 # le haskel

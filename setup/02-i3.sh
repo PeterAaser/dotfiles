@@ -18,7 +18,7 @@ PKGS=(
     network-manager-gnome    # provides nm-applet, exec'd at startup
     pulseaudio-utils         # provides pactl for the XF86Audio* keybinds
     xserver-xorg-input-libinput  # X11 input driver. Ubuntu 26.04 defaults to Wayland and doesn't pull this in for `apt install i3`. Without it, X starts and ignores every keyboard/mouse — symptom is "i3 looks frozen, mouse stuck, but the i3bar clock is still ticking".
-    alacritty                # terminal bound to $mod+Return. Ubuntu 26.04's `x-terminal-emulator` alternative is ptyxis (GTK4/Wayland-only) and doesn't work in i3, so we bypass i3-sensible-terminal entirely.
+    ghostty                  # terminal bound to $mod+Return. Ubuntu 26.04's `x-terminal-emulator` alternative is ptyxis (GTK4/Wayland-only) and doesn't work in i3, so we bypass i3-sensible-terminal entirely.
 )
 
 missing=()

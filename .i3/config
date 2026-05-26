@@ -29,10 +29,10 @@ font pango:monospace 12
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal — alacritty directly, not via i3-sensible-terminal, because
+# start a terminal — ghostty directly, not via i3-sensible-terminal, because
 # Ubuntu 26.04's `x-terminal-emulator` alternative is ptyxis (GTK4/Wayland-first)
 # which doesn't behave right under i3's X11 session.
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill

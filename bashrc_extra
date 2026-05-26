@@ -12,6 +12,7 @@ alias asc="cd ~/ascenium"
 alias grbo="git rebase origin/master"
 export VCD_SIM_I3=state:7,detail:1,surfer:4,cache:1
 
-# Standard Ubuntu colored prompt — TERM=alacritty doesn't trigger the
+# Standard Ubuntu colored prompt — terminals like alacritty/ghostty set TERM
+# to values (alacritty, xterm-ghostty) that don't match the
 # xterm-color|*-256color case earlier in ~/.bashrc, so set PS1 directly.
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
